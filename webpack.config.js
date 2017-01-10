@@ -10,6 +10,21 @@ module.exports = {
     filename: '[name].bundle.js',
   },
   module: {
+    noParse: [
+        /node_modules\/sinon\//,
+    ]
+},
+resolve: {
+    alias: {
+        'sinon': 'sinon/pkg/sinon',
+    }
+},
+externals: {
+    'jsdom': 'window',
+    'cheerio': 'window',
+    'react/lib/ExecutionEnvironment': true,
+},
+  module: {
     loaders: [
       {
         test: /\.jsx?$/,
