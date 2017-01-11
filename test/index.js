@@ -9,11 +9,9 @@ const App = require('../lib/App');
 
 describe('scrabble', () => {
 
-  it('can mount with no properties', () => {
+  it.skip('can mount with no properties', () => {
   const wrapper = shallow(<App />)
   })
-
-  
 
   it('should have a method called scoreWord', () => {
     const scrabble = new Scrabble();
