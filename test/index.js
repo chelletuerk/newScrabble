@@ -1,10 +1,19 @@
 import React from 'react'
 import { assert, expect } from 'chai'
+import { shallow, mount, render } from 'enzyme';
 
+const sinon=require('sinon')
 const Scrabble = require('../lib/scrabble');
+const App = require('../lib/App');
 
 
 describe('scrabble', () => {
+
+  it('can mount with no properties', () => {
+  const wrapper = shallow(<App />)
+  })
+
+  
 
   it('should have a method called scoreWord', () => {
     const scrabble = new Scrabble();
