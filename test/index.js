@@ -44,16 +44,16 @@ describe('scrabble', () => {
     assert.equal('multiplier', 'multiplier');
   });
 
-    it('should filter an array of words', () => {
-      const scrabble = new Scrabble();
-      assert.equal(scrabble.scoreWord.filter)
-    })
+  it('should filter an array of words', () => {
+    const scrabble = new Scrabble();
+    assert.equal(scrabble.scoreWord.filter)
+  });
 
-    it('should add point from letterScores object', () => {
-      const scrabble = new Scrabble();
-      const addPoint = scrabble.letterScores
-      assert.equal('', '')
-    })
+  it('should add point from letterScores object', () => {
+    const scrabble = new Scrabble();
+    const addPoint = scrabble.letterScores
+    assert.equal('', '')
+  });
 
 
 
